@@ -1,0 +1,62 @@
+# Ignore WordPress core files
+/wp-admin/
+/wp-includes/
+/wp-content/advanced-cache.php
+/wp-content/upgrade/
+/wp-content/backup-db/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/uploads/
+wp-config.php
+
+# Ignore specific WordPress files
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+
+# Ignore plugin files
+/wp-content/plugins/
+# Add exceptions for specific plugins if needed, e.g., !/wp-content/plugins/my-plugin/
+
+# Ignore theme files
+/wp-content/themes/
+# Add exceptions for specific themes if needed, e.g., !/wp-content/themes/my-theme/
+
+# Ignore specific project files
+.htaccess
+.sftp-config.json
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore compiled files
+*.css.map
+*.min.js
+
+# Ignore configuration files with sensitive information
+wp-config.php
+
