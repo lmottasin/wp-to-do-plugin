@@ -36,18 +36,25 @@ register_activation_hook(__FILE__, 'todo_app_activate');
 /**
  * Enqueue scripts and styles.
  */
-function to_do_app_enqueue_scripts()
+function to_do_app_enqueue_scripts(): void
 {
     // Enqueue JavaScript file
     wp_enqueue_script('my-plugin-js', plugins_url('admin/js/app.js', __FILE__), array(), '1.0', true);
 
-    // Enqueue CSS file
-    wp_enqueue_style('my-plugin-css', plugins_url('admin/css/app.css', __FILE__), array(), '1.0');
 }
 
-add_action('wp_enqueue_scripts', 'to_do_app_enqueue_scripts');
+add_action('wp_enqueue_script', 'to_do_app_enqueue_scripts');
 
+/**
+ * Enqueue styles.
+ */
+function to_do_app_enqueue_styles(): void
+{
+    // Enqueue CSS file
+    wp_enqueue_style('my-plugin-css', plugins_url('admin/css/output.css', __FILE__), array(), '1.0');
+}
 
+add_action('wp_enqueue_style', 'to_do_app_enqueue_styles');
 
 /**
  * Function to display to-do items table.

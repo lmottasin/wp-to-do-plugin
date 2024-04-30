@@ -1,13 +1,21 @@
-<?php
+<table class="w-full border-collapse border border-gray-300">
+    <thead>
+    <tr>
+        <th class="p-3 text-left bg-gray-100 border border-gray-300">ID</th>
+        <th class="p-3 text-left bg-gray-100 border border-gray-300">Task</th>
+        <th class="p-3 text-left bg-gray-100 border border-gray-300">Status</th>
+        <th class="p-3 text-left bg-gray-100 border border-gray-300">Created At</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($todo_items as $item) : ?>
+        <tr>
+            <td class="p-3 border border-gray-300"><?= $item['id'] ?></td>
+            <td class="p-3 border border-gray-300"><?= $item['task'] ?></td>
+            <td class="p-3 border border-gray-300"><?= $item['completed'] ? 'Completed' : 'Pending' ?></td>
+            <td class="p-3 border border-gray-300"><?= $item['created_at'] ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
 
-echo '<table class="todo-table">';
-echo '<tr><th>ID</th><th>Task</th><th>Status</th><th>Created At</th></tr>';
-foreach ($todo_items as $item) {
-    echo '<tr>';
-    echo '<td>' . $item['id'] . '</td>';
-    echo '<td>' . $item['task'] . '</td>';
-    echo '<td>' . ($item['completed'] ? 'Completed' : 'Pending') . '</td>';
-    echo '<td>' . $item['created_at'] . '</td>';
-    echo '</tr>';
-}
-echo '</table>';
