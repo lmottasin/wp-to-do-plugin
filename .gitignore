@@ -26,10 +26,6 @@ wp-config.php
 /wp-trackback.php
 /xmlrpc.php
 
-# Ignore plugin files
-/wp-content/plugins/
-# Add exceptions for specific plugins if needed, e.g., !/wp-content/plugins/my-plugin/
-
 # Ignore theme files
 /wp-content/themes/
 # Add exceptions for specific themes if needed, e.g., !/wp-content/themes/my-theme/
