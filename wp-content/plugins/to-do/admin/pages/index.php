@@ -1,7 +1,7 @@
 <table class="w-full border-collapse border border-gray-300">
     <thead>
     <tr>
-        <th class="p-3 text-left bg-gray-100 border border-gray-300">ID</th>
+        <th class="p-3 text-left bg-gray-100 border border-red-500">ID</th>
         <th class="p-3 text-left bg-gray-100 border border-gray-300">Task</th>
         <th class="p-3 text-left bg-gray-100 border border-gray-300">Status</th>
         <th class="p-3 text-left bg-gray-100 border border-gray-300">Created At</th>
